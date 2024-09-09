@@ -1,7 +1,7 @@
-import React, { useContext, useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
+// import React, { useContext, useEffect } from 'react';
+// import { useNavigate } from "react-router-dom";
 import "../App.css"
-import toast from 'react-hot-toast';
+// import toast from 'react-hot-toast';
 import { ChatState } from '../Context/ChatProvider';
 import Navbar from '../components/common/Navbar';
 
@@ -47,7 +47,7 @@ const Home = () => {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="img-box">
-                                                <img src={Slider} alt="Not Found" />
+                                                <img  alt="Not Found" />
                                             </div>
                                         </div>
                                     </div>
