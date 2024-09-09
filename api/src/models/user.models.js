@@ -27,6 +27,11 @@ const userSchema = new Schema({
         type: Boolean,
         default: false,
     },
+    accountType:{
+        type: String,
+        enum: ["Admin", "Student", "Checker"],
+        required: true
+    }
 
 
 },{timestamps: true})
@@ -52,6 +57,7 @@ userSchema.methods.generateAccessToken = async function () {
         {
             _id: this._id,
             email: this.email,
+            accountType: this.accountType
         },
         process.env.ACCESS_TOKEN_SECRET,
         {

@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import "../App.css"
 import toast from 'react-hot-toast';
+import { ChatState } from '../Context/ChatProvider';
+import Navbar from '../components/common/Navbar';
 
 
 
 
 const Home = () => {
-
+  const {user} = ChatState(); 
 
 
   return (
@@ -15,9 +17,7 @@ const Home = () => {
       
       <div className='w-[200px]'>
         {/* Navbar */}
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        
-        </nav>
+        <Navbar userData={user}/>
 
 
         {/* Home */}
