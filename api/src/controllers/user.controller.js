@@ -12,9 +12,9 @@ const singup = asyncHandler(async(req,res)=>{
     // if user exist throw error
     // if not exist create user and send response
 
-    const {name, email, password} = req.body;
+    const {name, email, password, accountType="Student"} = req.body;
     
-    if(!name || !email || !password){
+    if(!name || !email || !password || !accountType){
         throw new ApiError(400, "All fields are required");
     }
     
@@ -24,7 +24,7 @@ const singup = asyncHandler(async(req,res)=>{
         throw new ApiError(403, "User already exist, please login");
     }
 
-    const user = await User.create({ name, email, password })
+    const user = await User.create({ name, email, password, accountType })
 
     return res
     .status(200)
