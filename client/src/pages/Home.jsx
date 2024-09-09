@@ -33,7 +33,7 @@ const Home = () => {
                                         <div className="col-md-6 ">
                                             <div className="detail_box mt-40">
                                                 <h1>
-                                                    The best E-learning platform
+                                                    Revolutionizing Checking Platform
                                                 </h1>
                                                 <p>
                                                     Unlock Your Potential Anytime, Anywhere with our E-Learning Platform
@@ -50,7 +50,7 @@ const Home = () => {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="img-box">
-                                                <img src={Slider} alt="Not Found" />
+                                                {/* <img src={Slider} alt="Not Found" /> */}
                                             </div>
                                         </div>
                                     </div>
