@@ -1,13 +1,10 @@
-// import React, { useContext, useEffect } from 'react';
-// import { useNavigate } from "react-router-dom";
-import "../App.css";
-import "../css/responsive.css";
-import "../css/style.css";
-// import toast from 'react-hot-toast';
+import React, { useContext, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
+import "../App.css"
+import toast from 'react-hot-toast';
 import { ChatState } from '../Context/ChatProvider';
 import Navbar from '../components/common/Navbar';
 
-import Slider from '../../images/slider-img.png'
 
 
 
@@ -18,7 +15,7 @@ const Home = () => {
   return (
     <div>
       
-      <div className=''>
+      <div className='w-[200px]'>
         {/* Navbar */}
         <Navbar userData={user}/>
 
@@ -33,7 +30,7 @@ const Home = () => {
                                         <div className="col-md-6 ">
                                             <div className="detail_box mt-40">
                                                 <h1>
-                                                    Revolutionizing Checking Platform
+                                                    The best E-learning platform
                                                 </h1>
                                                 <p>
                                                     Unlock Your Potential Anytime, Anywhere with our E-Learning Platform
@@ -50,7 +47,7 @@ const Home = () => {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="img-box">
-                                                {/* <img src={Slider} alt="Not Found" /> */}
+                                                <img src={Slider} alt="Not Found" />
                                             </div>
                                         </div>
                                     </div>

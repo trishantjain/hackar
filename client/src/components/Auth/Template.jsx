@@ -21,7 +21,7 @@ const Template = ({title, description, image, formType}) => {
                         loading='lazy'
                         width={25}
                     />
-                    <h2 className='text-[18px] font-semibold'>EvaluaTeach</h2>
+                    <h2 className='text-[18px] font-semibold'>Connect</h2>
                 </div>
                 <div className='flexbox gap-2 text-[14px]'>
                     <p>
